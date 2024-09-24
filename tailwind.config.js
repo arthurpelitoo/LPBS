@@ -11,9 +11,9 @@ export default {
         playfair: ['Playfair Display', 'serif'],
       },
       colors:{
-        primary: '#FBE7A1',  //amarelo claro
-        secondary: '#E0CF90', //amarelo um pouco escuro
-        highlight: '#FF6F61' //rosa leve
+        primary: '#FA96C0',  //rosio
+        secondary: '#FBE7A1', //amarelo claro
+        highlight: '#E63E67' //morango
       },
       textColor:{
         primaryText: '#402B18' //marrom escuro

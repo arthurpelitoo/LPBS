@@ -1,9 +1,0 @@
-
-#btnHeader {
-    background-color: #E0CF90;
-    transition: background-color 0.5s ease;
-}
-
-#btnHeader:hover {
-    background-color: var(--tw-color-secondary);
-}
