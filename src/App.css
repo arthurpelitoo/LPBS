@@ -1,4 +1,20 @@
 
+.banner {
+  width: 100%; /* Ajuste conforme necessário */
+  height: 100%; /* Altura do banner */
+  background-image: url('../src/assets/fundodapagina/Design_sem_nome.png');
+  /* background-size: cover; Ajusta a imagem para cobrir o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: repeat; /* Evita que a imagem se repita */
+}
+
+/* <div className='banner'>
+        <HeaderBar></HeaderBar>
+        <Banner></Banner>
+        <AboutTheBook></AboutTheBook>
+        <WhatIsGonnaBeLearned></WhatIsGonnaBeLearned>
+        <BookContent></BookContent>
+</div> */
 
 /* #root {
   max-width: 1280px;

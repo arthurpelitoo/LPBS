@@ -1,0 +1,49 @@
+1. Componentes e Estrutura
+ImageCard:
+
+É um componente funcional que renderiza um card com uma imagem, título e descrição.
+A classe CSS do card controla a visibilidade por meio da opacidade (opacity-0 ou opacity-100) e adiciona uma transição suave com duration-1000 e transition-opacity.
+O card recebe uma prop isVisible, que indica se ele deve ser exibido.
+ContentSpace:
+
+Contém a lógica principal para determinar quais seções estão visíveis na tela.
+Usa o React Hook useRef para armazenar referências aos elementos DOM de cada seção.
+Utiliza useEffect para monitorar a visibilidade das seções na tela com IntersectionObserver.
+BookContent:
+
+Componente pai que encapsula ContentSpace e organiza o layout geral.
+2. Hooks Utilizados
+useRef:
+
+Armazena as referências dos elementos DOM de cada seção para que possam ser observados pelo IntersectionObserver.
+useState:
+
+Rastreia quais seções estão visíveis por meio do array visibleSections.
+Cada índice do array corresponde a uma seção, com valores true ou false indicando visibilidade.
+useEffect:
+
+Configura o IntersectionObserver para monitorar as referências das seções.
+Quando um elemento é visível (pelo menos 50% dentro da viewport), o índice correspondente em visibleSections é atualizado para true.
+3. Funcionamento da Visibilidade Dinâmica
+Quando a página é carregada:
+Todas as seções começam invisíveis (opacity-0).
+sectionRefs armazena as referências aos elementos DOM das seções.
+O IntersectionObserver monitora as seções:
+Quando uma seção atinge 50% de visibilidade na viewport, seu estado correspondente em visibleSections é atualizado para true.
+Isso ativa a classe opacity-100, tornando o card visível.
+4. Dados das Seções
+Um array chamado sections contém os dados de cada card, incluindo:
+Título (title)
+Descrição (description)
+Imagem (posterSrc)
+Esse array é mapeado para gerar os cards dinamicamente.
+5. Lógica do IntersectionObserver
+O IntersectionObserver é configurado para observar mudanças de visibilidade em sectionRefs.
+Cada vez que um elemento monitorado se torna visível:
+O índice do elemento visível é identificado no array sectionRefs.
+O estado visibleSections é atualizado para refletir a visibilidade daquele elemento.
+6. Estilização e Layout
+As classes Tailwind CSS são usadas para criar um layout responsivo:
+tablet:, laptop: ajustam tamanhos e espaçamentos com base nos breakpoints.
+transition-opacity e duration-1000 controlam a transição suave da visibilidade.
+O texto e as imagens são centralizados e dimensionados dinamicamente.

@@ -38,6 +38,10 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  /* @apply bg-secondary; */
+  /* background-image: url('./assets/fundo da pagina/Design_sem_nome.png');
+  background-size: cover;
+  background-repeat: no-repeat; */
   /* background-color: #ffffff; */
 } 
 
