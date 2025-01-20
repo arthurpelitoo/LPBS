@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css'
 // import AboutTheBook from './components/AboutTheBook.tsx'
 // import Banner from './components/Banner.tsx'
@@ -5,12 +6,16 @@ import './App.css'
 // import HeaderBar from './components/HeaderBar.tsx'
 // import WhatIsGonnaBeLearned from './components/WhatIsGonnaBeLearned.tsx'
 import ChapterCarrousel from './components/ChapterCarrousel.tsx'
+import CustomCursor from './components/CustomCursor.tsx'
 
-function App() {
+const App: React.FC = () => {
 
   return (
+    <div>
+      <CustomCursor></CustomCursor>
       <ChapterCarrousel></ChapterCarrousel>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;

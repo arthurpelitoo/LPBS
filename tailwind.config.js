@@ -13,6 +13,7 @@ export default {
       screens: {
         mobile: '320px',
         tablet: '640px', // Exemplo: Breakpoint para tablet a partir de 640px
+        smTablet: '768px', // Pequenos tablets ou dispositivos intermediários
         laptop:'1024px',
         desktop: '1280px',
       },
