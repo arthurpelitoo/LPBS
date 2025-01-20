@@ -120,7 +120,7 @@ const ChapterCarrousel = () => {
                     {chapters.map((chapter, index) => (
                         <div
                             key={index}
-                            className="snap-center shrink-0 w-[75%] mobile:w-fit tablet:w-fit smTablet:w-[45%] laptop:w-[35%] bg-secondary rounded-lg shadow-lg overflow-hidden"
+                            className="snap-center shrink-0 desktop:w-[30%] mobile:w-fit tablet:w-fit smTablet:w-[45%] laptop:w-[35%] bg-secondary rounded-lg shadow-lg overflow-hidden"
                         >
                             <img 
                                 src={chapter.image} 
